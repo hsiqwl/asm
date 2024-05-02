@@ -1,0 +1,31 @@
+ договоренности: right храним в r12b, left храним в r13b, stop храним в r14b
+ 
+сделаем процедуру sort, которая будет сортировать массив
+1)указатель на начало массива будет передаваться в rax 
+2)длина массива будет передаваться в r8b
+3)right храним в r12b
+4)left храним в r13b
+5)stop храним в r14b
+6)индекс i будет храниться в r11b
+
+		
+		int control = len - 1;
+		left = 0, right = control
+		int i = left;
+		++i
+		while(i < right){
+			if(arr[i] < arr[i-1])
+				swap, control = i         
+			++i;	
+		}
+		right = control
+		--right;
+		
+		
+		i = right
+		while(i > left){
+			if(arr[i] < arr[i-1] 
+			swap, control = i
+			--i
+		}
+		left = control
